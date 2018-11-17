@@ -1,0 +1,2 @@
+module PullInventoriesHelper
+end

@@ -1,0 +1,35 @@
+<style>
+	#userstable thead tr:hover{
+		cursor: pointer;
+	}
+	#userstable tbody tr:nth-child(2n-1){
+		background-color:#F0F3F6;
+	}
+	#userstable tbody tr:hover{
+		background-color: #eaebed;
+	}
+</style>
+<div class="table-responsive">	
+	<div class="text-center" style="padding-top: 20px">Now is <%= Time.now.strftime("%B %d, %Y, %H:%M %Z") %></div>
+	<hr>
+	<table id="userstable" class="table table-striped">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>User Name</th>
+				<th>SignUp Data</th>
+				<th>Last LogIn Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @users.each_with_index do|user, index| %>
+			<tr>
+				<td><%= index+1 %></td>
+				<td><%= user.email %></td>
+				<td><%= user.created_at.strftime("%Y-%m-%d %I:%M:%S") %></td>
+				<td><%= user.current_sign_in_at.strftime("%Y-%m-%d %I:%M:%S") %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

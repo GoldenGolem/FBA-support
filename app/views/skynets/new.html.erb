@@ -1,0 +1,251 @@
+
+
+<style type="text/css">
+tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+    div.dataTables_wrapper {
+        margin: 0 auto;
+    }
+    
+
+    th input {
+        width: 90%;
+        min-width: 50px;
+    }
+
+    tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    .modal-backdrop
+    {
+      display: none;
+    }
+</style>
+<% unless !@name || @name.blank? %>
+  <style type="text/css">
+    .boldspan{ 
+      font-weight: bolder;
+      font-size: 18px;
+    }
+  </style>
+<% end %>
+<div class="row">
+  <div class="col-md-12 panel panel-default panel-body">
+    <div class="text-center">
+      <div class="skyent-id-types">
+        Search by <span class="tabs tab1">UPC</span> enabled, Change to <span class="tabs tab2">ASIN</span>, <span class="tabs tab3">ISBN</span>, or <span class="tabs tab4">EAN</span>
+      </div>
+    </div>
+    <div style="">
+      <div class="form-group has-feedback col-md-2 height1 downend" data-toggle="tooltip" data-placement="bottom" title="Download your Template">
+        <a href="/template/sample_template.csv" target="_blank" class='btn btn-lg downloadbtn'>
+          <image src="/images/download_temp.png"> 
+          <h2>Download</br>Template</h2>
+        </a>
+      </div>
+      <div class=" col-md-2 height1 greenback firstborder" data-toggle="tooltip" data-placement="bottom" title="Select File">
+        <div classs="col-md-12">
+          <span class="boldspan">
+            <%= 'Select File' if !@name || @name.blank? %>
+            <%= @name unless !@name || @name.blank? %>
+          </span>
+        </div>
+        <div class="selectfile">
+          <%= form_tag({action: :create}, multipart: true, id: 'filefeed') do %>
+            <%= hidden_field_tag 'form_type' ,'fileupload' %>
+            <span class="btn btn-success fileinput-button choosespan" style="width: 100%; height: 100%;">
+              <%= file_field_tag 'file_field' , accept: 'text/csv/xls/xlsx' %>
+            </span>
+          <% end %>
+        </div>
+        <div class="col-md-12" style="margin-top: 5px">
+          <span style="font-weight: normal; font-size: 14px"><%= @file_type if @file_type %></span><br>
+          <span style="font-weight: normal; font-size: 14px"><%= @file_size if @file_size %></span>
+        </div>
+      </div> 
+      <%= form_for @skynet, html: {class: 'form-signin'} do |f| %>
+       <%= hidden_field_tag 'form_type' ,'selectheader' %>
+       <%= hidden_field_tag 'file_path' ,@tempfile %>
+       <%= hidden_field_tag 'file_name' ,@name %>
+       <input type="hidden" name="skynet[skynet_id_type_id]" id="skynet_id_type_id">
+        <div class="form-group has-feedback col-md-2 height1 greenback">
+          <%= f.label :vendor_id, 'Choose Vendor' %><br>
+          <div class="form-group col-md-11 inlineblock" data-toggle="tooltip" data-placement="bottom" title="Choose Vendor">
+            <%= select_tag(:vendor_id, options_from_collection_for_select(current_user.get_vendors, :id, :name), :class => 'form-control inputstl chosen-select input-md') %>
+          </div>            
+        </div>
+        <div class="form-group has-feedback col-md-2 height1 pinkback1" data-toggle="tooltip" data-placement="bottom" title="Select the Column" style="display: inline-flex;">
+          <h1 class="numberh">1</h1>
+          <div class="form-group col-md-12">
+            <label for="index_header">Select the Column</label><br>
+            <div class="form-group col-md-11 inlineblock">
+              <%= select_tag :index_header, options_for_select(@row), :class => 'form-control inputstl chosen-select input-md' %>
+            </div>
+          </div>         
+        </div>
+        <div class="form-group has-feedback col-md-2 height1 pinkback2" data-toggle="tooltip" data-placement="bottom" title="Select Your Cost" style="display: inline-flex;">
+          <h1 class="numberh">2</h1>
+          <div class="form-group col-md-12">
+            <%= f.label :cost_header, "Select Your Cost" %><br>
+            <div class="form-group col-md-11 inlineblock">
+              <%= select_tag :cost_header, options_for_select(@row), :class => 'form-control inputstl chosen-select input-md' %>
+            </div>
+          </div>
+        </div>
+        <div class="form-group has-feedback col-md-2 height1 pinkback3" data-toggle="tooltip" data-placement="bottom" title="Select Vendor Sku Column" style="display: inline-flex;">
+          <h1 class="numberh">3</h1>
+          <div class="form-group col-md-12">
+            <label for="vendorsku_header">Select Vendor SKU</label><br>
+            <div class="form-group col-md-11 inlineblock">
+              <%= select_tag :vendorsku_header, options_for_select(@row), :class => 'form-control inputstl chosen-select input-md' %>
+            </div>
+          </div>                    
+        </div>     
+        <button type="submit" class="btn btn-lg uploadbtn col-md-2 height1 upend" data-toggle="tooltip" data-placement="bottom" title="Upload your Skynet">
+          <h2>Upload</h2>
+          <image src="/images/upload_temp.png" class="">
+        </button>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row pv-lg">                                     
+              <div class="table-responsive mytable">
+                 <table id="datatable_skynethistory" class="table table-striped" data-sort-name="created_at" data-sort-order="desc">
+                    <thead>
+                       <tr>
+                          <th style="width:20%">FileName</th>
+                          <th style="width:10%">Vendor</th>
+                          <th style="width:20%"></th>
+                          <th style="width:15%">OutPut</th>                            
+                          <th style="width:15%">Created At</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>                    
+                 </table>
+                 <div class="col-md-4"></div>
+                 <div class="col-md-4" style="text-align: center; margin-top: 20px">
+                   <%= link_to 'See Older Files', new_skynet_path(:vendors_all => 'all') %>
+                 </div>
+                 <div class="col-md-4"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+</div>
+<div id="content">
+  <div class="content-inner">
+    <div class="panel panel-default">
+      <div class="panel-heading col-lg-12">
+        <div class="panel-title col-lg-3">
+          Vendor<%= select_tag(:grid_vendor_id, options_from_collection_for_select(current_user.get_vendors.all, :id, :name), :class => 'form-control chosen-select input-md') %>
+        </div>
+        <div class="inlineheader col-lg-6">
+          <div class="col-lg-4">Profitable rows: <span id="profitrows" class="popspan"></span></div>
+          <div class="col-lg-4">Average Profit: <span id="avgprofit" class="popspan"></span></div>
+          <div class="col-lg-4">Average Margin: <span id="avgmargin" class="popspan"></span></div>
+        </div>
+        <div class="col-lg-3 wipp">
+          <a href="javascript:deletevendoritems()" data-confirm="Are you sure you want to delete?" class="wipeclean pull-right">Wipe Clean<i class="fa fa-trash" style="margin-left: 5px"></i></a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row pv-lg">
+          <div class="col-lg-12">
+            <div class="table-responsive">
+              
+
+                <table id="datatable4" class="table table-striped" style="width: 100%">
+                  <thead>
+                     <tr>
+                      <th >ID</th>
+                      <th style="min-width:200px;">NAME</th>
+                      <th >ASIN</th>
+                      <th>VendorSKU</th>
+                      <th >UPC</th>
+                      <th>COST</th>
+                      <th>Packcount</th>
+                      <th>PackCost</th>
+                      <th >BBP</th>
+                      <th>Profit</th>
+                      <th>Margin</th>
+                      <th>FBAfee</th>
+                      <th>ComPCT</th>
+                      <th>ComFee</th>
+                      <th>EST</th>
+                      <th>OFFER</th>
+                      <th>FBA</th>
+                      <th>FBM</th>
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <tfoot>
+                    <tr>
+                      <th >ID</th>
+                      <th style="min-width:200px;">NAME</th>
+                      <th >ASIN</th>
+                      <th>VendorSKU</th>
+                      <th >UPC</th>
+                      <th>COST</th>
+                      <th>Packcount</th>
+                      <th>PackCost</th>
+                      <th >BBP</th>
+                      <th>Profit</th>
+                      <th>Margin</th>
+                      <th>FBAfee</th>
+                      <th>ComPCT</th>
+                      <th>ComFee</th>
+                      <th>EST</th>
+                      <th>OFFER</th>
+                      <th>FBA</th>
+                      <th>FBM</th>
+                    </tr>
+                  </tfoot>
+               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end content inner -->
+</div><!-- end content -->
+<div id="dlg_set_filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabelSmall" aria-hidden="true" class="modal fade">
+    <div class="modal-dialog modal-sm">
+       <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+                <span aria-hidden="true">&times;</span>
+             </button>
+             <h4 id="myModalLabelSmall" class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body" style="padding: 20px;">
+              <select name="slt_expression" id="slt_expression">
+                <option value="=">=</option>
+                <option value=">">></option>
+                <option value="<"><</option>
+              </select>
+              <input type="number" name="txt_comparevalue" id="txt_comparevalue">
+          </div>
+          <div class="modal-footer">
+
+             <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+             <button type="button" data-dismiss="modal" class="btn btn-standard" id="btn_reset_filter">Reset</button>
+             <button type="button" data-dismiss="modal" class="btn btn-primary" id="btn_confirm_filter">Filter</button>
+          </div>
+       </div>
+    </div>
+ </div>
+<%= javascript_tag do %>
+  window.vendor_id = "<%= @vendor_id %>";
+<% end %>

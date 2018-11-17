@@ -1,0 +1,933 @@
+Started GET "/" for ::1 at 2018-07-02 11:24:22 -0400
+  
+Mysql2::Error::ConnectionError (Access denied for user 'root'@'localhost' (using password: YES)):
+  
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.6ms)
+Started GET "/" for ::1 at 2018-07-02 11:42:18 -0400
+  
+Mysql2::Error::ConnectionError (Access denied for user 'universe'@'localhost' (using password: NO)):
+  
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.4ms)
+Started GET "/api/document" for ::1 at 2018-07-02 11:42:33 -0400
+  
+Mysql2::Error::ConnectionError (Access denied for user 'universe'@'localhost' (using password: NO)):
+  
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.0) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.7) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.7) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.7) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+  [1m[35m (377.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (82.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (17.8ms)[0m  [1m[34mSELECT GET_LOCK('8034761521569787830', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (31.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170107183317)
+  [1m[35m (115.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (249.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (224.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107183317')[0m
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCompanies (20170107194551)
+  [1m[35m (100.7ms)[0m  [1m[35mCREATE TABLE `companies` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `addressline1` varchar(255), `addressline2` varchar(255), `city` varchar(255), `zipcode` varchar(255), `state` varchar(255), `aws_api_key` varchar(255), `aws_api_secretkey` varchar(255), `aws_assoicate_tag` varchar(255), `mws_api_key` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107194551')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVendors (20170107194651)
+  [1m[35m (79.7ms)[0m  [1m[35mCREATE TABLE `vendors` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `addressline1` varchar(255), `addressline2` varchar(255), `city` varchar(255), `zipcode` varchar(255), `state` varchar(255), `account_number` varchar(255), `contact` varchar(255), `title` varchar(255), `phone` varchar(255), `email` varchar(255), `website` varchar(255), `dropship` tinyint(1), `crossdock` tinyint(1), `login` varchar(255), `password` varchar(255), `ref_name` varchar(255), `ref_title` varchar(255), `ref_phone` varchar(255), `ref_email` varchar(255), `ref_fax` varchar(255), `ship_fba` varchar(255), `ship_ltl` varchar(255), `sticker_unit` varchar(255), `ship_tier` varchar(255), `tier_price` varchar(255), `cc_tran` varchar(255), `leadtime` int DEFAULT 14, `user_id` int, `vendor_category_id` int,  INDEX `index_vendors_on_user_id`  (`user_id`),  INDEX `index_vendors_on_vendor_category_id`  (`vendor_category_id`)) ENGINE=InnoDB[0m
+  [1m[35m (174.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_vendors_on_name`  ON `vendors` (`name`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107194651')[0m
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVendorCategories (20170107194715)
+  [1m[35m (86.0ms)[0m  [1m[35mCREATE TABLE `vendor_categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (154.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_vendor_categories_on_name`  ON `vendor_categories` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107194715')[0m
+  [1m[35m (43.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170107195003)
+  [1m[35m (113.4ms)[0m  [1m[35mCREATE TABLE `roles` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (784.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_roles_on_name`  ON `roles` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (22.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107195003')[0m
+  [1m[35m (59.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddActiveRoleToUser (20170107195047)
+  [1m[35m (1261.6ms)[0m  [1m[35mALTER TABLE `users` ADD `active` tinyint(1) DEFAULT 1[0m
+  [1m[35m (622.1ms)[0m  [1m[35mALTER TABLE `users` ADD `Role_id` int[0m
+  [1m[35m (389.3ms)[0m  [1m[35mCREATE  INDEX `index_users_on_Role_id`  ON `users` (`Role_id`) [0m
+  [1m[35m (594.1ms)[0m  [1m[35mALTER TABLE `users` ADD `Company_id` int[0m
+  [1m[35m (590.4ms)[0m  [1m[35mCREATE  INDEX `index_users_on_Company_id`  ON `users` (`Company_id`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (27.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107195047')[0m
+  [1m[35m (71.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeReferenceFromUser (20170107232652)
+  [1m[35m (370.3ms)[0m  [1m[35mALTER TABLE `users` DROP `Role_id`[0m
+  [1m[35m (575.2ms)[0m  [1m[35mALTER TABLE `users` DROP `Company_id`[0m
+  [1m[35m (333.8ms)[0m  [1m[35mALTER TABLE `users` ADD `role_id` int[0m
+  [1m[35m (175.6ms)[0m  [1m[35mCREATE  INDEX `index_users_on_role_id`  ON `users` (`role_id`) [0m
+  [1m[35m (200.8ms)[0m  [1m[35mALTER TABLE `users` ADD `company_id` int[0m
+  [1m[35m (216.5ms)[0m  [1m[35mCREATE  INDEX `index_users_on_company_id`  ON `users` (`company_id`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170107232652')[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSkynets (20170109161955)
+  [1m[35m (69.9ms)[0m  [1m[35mCREATE TABLE `skynets` (`id` int AUTO_INCREMENT PRIMARY KEY, `task_id` varchar(255), `inputfileurl` varchar(255), `inputfilename` varchar(255), `idheadername` varchar(255) DEFAULT 'ID', `costheadername` varchar(255) DEFAULT 'COST', `skuheadername` varchar(255) DEFAULT 'SKU', `getestimatesales` tinyint(1) DEFAULT 1, `getisamazonsale` tinyint(1) DEFAULT 1, `webhookprogress` varchar(255), `buyer_id` int, `skynet_id_type_id` int,  INDEX `index_skynets_on_buyer_id`  (`buyer_id`),  INDEX `index_skynets_on_skynet_id_type_id`  (`skynet_id_type_id`)) ENGINE=InnoDB[0m
+  [1m[35m (157.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_task_id`  ON `skynets` (`task_id`) [0m
+  [1m[35m (125.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_inputfileurl`  ON `skynets` (`inputfileurl`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170109161955')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSkynetIdTypes (20170109163343)
+  [1m[35m (81.3ms)[0m  [1m[35mCREATE TABLE `skynet_id_types` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170109163343')[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddoutputfileurlToSkynet (20170112194945)
+  [1m[35m (425.5ms)[0m  [1m[35mALTER TABLE `skynets` DROP `buyer_id`[0m
+  [1m[35m (259.4ms)[0m  [1m[35mALTER TABLE `skynets` ADD `outputfileurl` varchar(255)[0m
+  [1m[35m (210.1ms)[0m  [1m[35mALTER TABLE `skynets` ADD `user_id` int[0m
+  [1m[35m (258.1ms)[0m  [1m[35mCREATE  INDEX `index_skynets_on_user_id`  ON `skynets` (`user_id`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170112194945')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTimestampToSkynet (20170113032631)
+  [1m[35m (799.7ms)[0m  [1m[35mALTER TABLE `skynets` ADD `created_at` datetime[0m
+  [1m[35m (500.7ms)[0m  [1m[35mALTER TABLE `skynets` ADD `updated_at` datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170113032631')[0m
+  [1m[35m (64.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeTimeStampToSkynet (20170113040228)
+  [1m[35m (351.0ms)[0m  [1m[35mALTER TABLE `skynets` DROP `created_at`[0m
+  [1m[35m (367.6ms)[0m  [1m[35mALTER TABLE `skynets` DROP `updated_at`[0m
+  [1m[35m (258.7ms)[0m  [1m[35mALTER TABLE `skynets` ADD `created_at` datetime DEFAULT '2018-07-02 15:50:12' NOT NULL[0m
+  [1m[35m (209.1ms)[0m  [1m[35mALTER TABLE `skynets` ADD `updated_at` datetime DEFAULT '2018-07-02 15:50:12' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170113040228')[0m
+  [1m[35m (30.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RecreateSkynet (20170113041025)
+  [1m[35m (42.2ms)[0m  [1m[35mDROP TABLE `skynets`[0m
+  [1m[35m (89.6ms)[0m  [1m[35mCREATE TABLE `skynets` (`id` int AUTO_INCREMENT PRIMARY KEY, `task_id` varchar(255), `inputfileurl` varchar(255), `inputfilename` varchar(255), `idheadername` varchar(255) DEFAULT 'ID', `costheadername` varchar(255) DEFAULT 'COST', `skuheadername` varchar(255) DEFAULT 'SKU', `getestimatesales` tinyint(1) DEFAULT 1, `getisamazonsale` tinyint(1) DEFAULT 1, `webhookprogress` varchar(255), `user_id` int, `vendor_id` int, `skynet_id_type_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_skynets_on_user_id`  (`user_id`),  INDEX `index_skynets_on_vendor_id`  (`vendor_id`),  INDEX `index_skynets_on_skynet_id_type_id`  (`skynet_id_type_id`)) ENGINE=InnoDB[0m
+  [1m[35m (141.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_task_id`  ON `skynets` (`task_id`) [0m
+  [1m[35m (141.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_inputfileurl`  ON `skynets` (`inputfileurl`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170113041025')[0m
+  [1m[35m (68.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to REecreateSkynet (20170113042227)
+  [1m[35m (66.2ms)[0m  [1m[35mDROP TABLE `skynets`[0m
+  [1m[35m (81.5ms)[0m  [1m[35mCREATE TABLE `skynets` (`id` int AUTO_INCREMENT PRIMARY KEY, `task_id` varchar(255), `inputfileurl` varchar(255), `inputfilename` varchar(255), `idheadername` varchar(255) DEFAULT 'ID', `costheadername` varchar(255) DEFAULT 'COST', `skuheadername` varchar(255) DEFAULT 'SKU', `getestimatesales` tinyint(1) DEFAULT 1, `getisamazonsale` tinyint(1) DEFAULT 1, `webhookprogress` varchar(255), `user_id` int, `vendor_id` int, `skynet_id_type_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_skynets_on_user_id`  (`user_id`),  INDEX `index_skynets_on_vendor_id`  (`vendor_id`),  INDEX `index_skynets_on_skynet_id_type_id`  (`skynet_id_type_id`)) ENGINE=InnoDB[0m
+  [1m[35m (124.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_task_id`  ON `skynets` (`task_id`) [0m
+  [1m[35m (142.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynets_on_inputfileurl`  ON `skynets` (`inputfileurl`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170113042227')[0m
+  [1m[35m (36.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddOutputurlToSkynet (20170113053810)
+  [1m[35m (166.9ms)[0m  [1m[35mALTER TABLE `skynets` ADD `outputfileurl` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170113053810')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddStatusToSkynet (20170116111605)
+  [1m[35m (219.0ms)[0m  [1m[35mALTER TABLE `skynets` ADD `statusmessage` varchar(255)[0m
+  [1m[35m (276.0ms)[0m  [1m[35mALTER TABLE `skynets` ADD `skynet_status_id` int[0m
+  [1m[35m (157.3ms)[0m  [1m[35mCREATE  INDEX `index_skynets_on_skynet_status_id`  ON `skynets` (`skynet_status_id`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170116111605')[0m
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSkynetStatuses (20170116145313)
+  [1m[35m (90.6ms)[0m  [1m[35mCREATE TABLE `skynet_statuses` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (150.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_skynet_statuses_on_name`  ON `skynet_statuses` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170116145313')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIndexToCompany (20170117033214)
+  [1m[35m (205.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_companies_on_name`  ON `companies` (`name`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170117033214')[0m
+  [1m[35m (67.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVendoritems (20170123005353)
+  [1m[35m (292.7ms)[0m  [1m[35mCREATE TABLE `vendoritems` (`id` int AUTO_INCREMENT PRIMARY KEY, `cost` decimal, `name` varchar(255), `vendorasin_id` int, `vendor_id` int, `user_id` int, `asin` varchar(255), `upc` varchar(255), `isbn` varchar(255), `ean` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_vendoritems_on_vendorasin_id`  (`vendorasin_id`),  INDEX `index_vendoritems_on_vendor_id`  (`vendor_id`),  INDEX `index_vendoritems_on_user_id`  (`user_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170123005353')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVendorasins (20170123030336)
+  [1m[35m (96.7ms)[0m  [1m[35mCREATE TABLE `vendorasins` (`id` int AUTO_INCREMENT PRIMARY KEY, `asin` varchar(255), `brand_id` int, `name` varchar(255), `salesrank` int, `packagequantity` int, `buyboxprice` decimal, `referenceoffer` decimal, `referenceoffertype` varchar(255), `amazonoffer` int, `fbafee` decimal, `storagefee` decimal, `variableclosingfee` decimal, `commissionpct` decimal, `commissiionfee` decimal, `inboundshipping` decimal, `profit` decimal, `salespermonth` int, `totaloffers` int, `fbaoffers` int, `fbmoffers` int, `lowestfbaoffer` decimal, `lowestfbmoffer` decimal, `isbuyboxfba` tinyint(1), `product_type_id` int, `ranked_category_id` int, `weight` decimal, `length` decimal, `width` decimal, `height` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_vendorasins_on_brand_id`  (`brand_id`),  INDEX `index_vendorasins_on_product_type_id`  (`product_type_id`),  INDEX `index_vendorasins_on_ranked_category_id`  (`ranked_category_id`)) ENGINE=InnoDB[0m
+  [1m[35m (167.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_vendorasins_on_asin`  ON `vendorasins` (`asin`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170123030336')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBrands (20170123030422)
+  [1m[35m (82.3ms)[0m  [1m[35mCREATE TABLE `brands` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (196.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_brands_on_name`  ON `brands` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170123030422')[0m
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProductTypes (20170123040829)
+  [1m[35m (64.4ms)[0m  [1m[35mCREATE TABLE `product_types` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (174.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_product_types_on_name`  ON `product_types` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170123040829')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRakedCategories (20170123040937)
+  [1m[35m (90.6ms)[0m  [1m[35mCREATE TABLE `raked_categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (158.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_raked_categories_on_name`  ON `raked_categories` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170123040937')[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProductGroups (20170125034224)
+  [1m[35m (115.5ms)[0m  [1m[35mCREATE TABLE `product_groups` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (179.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_product_groups_on_name`  ON `product_groups` (`name`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170125034224')[0m
+  [1m[35m (70.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnsToVendorasin (20170125034253)
+  [1m[35m (238.0ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `product_groups_id` int[0m
+  [1m[35m (149.9ms)[0m  [1m[35mCREATE  INDEX `index_vendorasins_on_product_groups_id`  ON `vendorasins` (`product_groups_id`) [0m
+  [1m[35m (226.7ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `packagewidth` decimal[0m
+  [1m[35m (184.2ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `packageheight` decimal[0m
+  [1m[35m (209.5ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `packagelength` decimal[0m
+  [1m[35m (159.3ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `packageweight` decimal[0m
+  [1m[35m (226.7ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `notes` varchar(255)[0m
+  [1m[35m (184.0ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `review` decimal DEFAULT 0[0m
+  [1m[35m (192.9ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `numreview` int DEFAULT 0[0m
+  [1m[35m (276.2ms)[0m  [1m[35mALTER TABLE `vendorasins` DROP `amazonoffer`[0m
+  [1m[35m (212.0ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `amazonoffer` tinyint(1) DEFAULT 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170125034253')[0m
+  [1m[35m (62.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveUserFromVendoritem (20170205171220)
+  [1m[35m (210.1ms)[0m  [1m[35mALTER TABLE `vendoritems` DROP `user_id`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170205171220')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnsToVendorAsin (20170413141843)
+  [1m[35m (233.6ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `totalfbafee` decimal DEFAULT 0[0m
+  [1m[35m (217.8ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `mpn` varchar(255) DEFAULT ''[0m
+  [1m[35m (193.5ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `ean` varchar(255) DEFAULT ''[0m
+  [1m[35m (167.6ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `upc` varchar(255) DEFAULT ''[0m
+  [1m[35m (175.9ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `salesrankcategory` varchar(255) DEFAULT ''[0m
+  [1m[35m (159.2ms)[0m  [1m[35mALTER TABLE `vendorasins` ADD `invalidid` tinyint(1) DEFAULT 0[0m
+  [1m[35m (259.3ms)[0m  [1m[35mALTER TABLE `vendoritems` ADD `vendorsku` varchar(255) DEFAULT ''[0m
+  [1m[35m (23.0ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `buyboxprice` `buyboxprice` decimal DEFAULT 0[0m
+  [1m[35m (31.8ms)[0m  [1m[35mALTER TABLE `vendoritems` CHANGE `cost` `cost` decimal DEFAULT 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170413141843')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeVendorAsin (20170416220116)
+  [1m[35m (180.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `salespermonth` `salespermonth` decimal DEFAULT 0[0m
+  [1m[35m (30.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `commissionpct` `commissionpct` decimal DEFAULT 0[0m
+  [1m[35m (30.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `commissiionfee` `commissiionfee` decimal DEFAULT 0[0m
+  [1m[35m (30.4ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `totaloffers` `totaloffers` int DEFAULT 0[0m
+  [1m[35m (22.3ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `fbaoffers` `fbaoffers` int DEFAULT 0[0m
+  [1m[35m (31.3ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `fbmoffers` `fbmoffers` int DEFAULT 0[0m
+  [1m[35m (30.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `fbafee` `fbafee` decimal DEFAULT 0[0m
+  [1m[35m (22.2ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `storagefee` `storagefee` decimal DEFAULT 0[0m
+  [1m[35m (29.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `variableclosingfee` `variableclosingfee` decimal DEFAULT 0[0m
+  [1m[35m (30.4ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbaoffer` `lowestfbaoffer` decimal DEFAULT 0[0m
+  [1m[35m (30.5ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbmoffer` `lowestfbmoffer` decimal DEFAULT 0[0m
+  [1m[35m (30.4ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `isbuyboxfba` `isbuyboxfba` tinyint(1) DEFAULT 0[0m
+  [1m[35m (186.6ms)[0m  [1m[35mALTER TABLE `vendorasins` DROP `salesrankcategory`[0m
+  [1m[35m (411.6ms)[0m  [1m[35mALTER TABLE `vendorasins` DROP `profit`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416220116')[0m
+  [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddpackcountToVendoritem (20170419000333)
+  [1m[35m (269.0ms)[0m  [1m[35mALTER TABLE `vendoritems` ADD `packcount` int DEFAULT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170419000333')[0m
+  [1m[35m (81.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubscriptions (20170913063506)
+  [1m[35m (153.6ms)[0m  [1m[35mCREATE TABLE `subscriptions` (`id` int AUTO_INCREMENT PRIMARY KEY, `subscriptionid` varchar(255), `amount` int, `interval` varchar(255), `created` int) ENGINE=InnoDB[0m
+  [1m[35m (191.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_subscriptions_on_subscriptionid`  ON `subscriptions` (`subscriptionid`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170913063506')[0m
+  [1m[35m (89.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSubscriptionIdToUsers (20170913064517)
+  [1m[35m (181.5ms)[0m  [1m[35mALTER TABLE `users` ADD `subscription_id` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170913064517')[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePullInventories (20180402044711)
+  [1m[35m (71.4ms)[0m  [1m[35mCREATE TABLE `pull_inventories` (`id` int AUTO_INCREMENT PRIMARY KEY, `inputfileurl` varchar(255), `inputfilename` varchar(255), `idcolumn` int DEFAULT -1, `costcolumn` int DEFAULT -1, `skucolumn` int DEFAULT -1, `getestimatesales` tinyint(1) DEFAULT 1, `getisamazonsale` tinyint(1) DEFAULT 1, `user_id` int, `vendor_id` int, `skynet_id_type_id` int, `skynet_status_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_pull_inventories_on_user_id`  (`user_id`),  INDEX `index_pull_inventories_on_vendor_id`  (`vendor_id`),  INDEX `index_pull_inventories_on_skynet_id_type_id`  (`skynet_id_type_id`),  INDEX `index_pull_inventories_on_skynet_status_id`  (`skynet_status_id`)) ENGINE=InnoDB[0m
+  [1m[35m (124.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_pull_inventories_on_inputfileurl`  ON `pull_inventories` (`inputfileurl`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180402044711')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeColumnTypeOfVendorItem (20180429202857)
+  [1m[35m (195.2ms)[0m  [1m[35mALTER TABLE `vendoritems` CHANGE `name` `name` text[0m
+  [1m[35m (216.1ms)[0m  [1m[35mALTER TABLE `vendoritems` CHANGE `name` `vendortitle` text[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180429202857')[0m
+  [1m[35m (30.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeColumnTypeOfVendorAsin (20180429202933)
+  [1m[35m (180.3ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `name` `name` text[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180429202933')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPrecisionToDecimal (20180624203004)
+  [1m[35m (163.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `buyboxprice` `buyboxprice` double DEFAULT 0.0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180624203004')[0m
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPrecisionToDecimals (20180624203353)
+  [1m[35m (163.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `buyboxprice` `buyboxprice` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (407.1ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `referenceoffer` `referenceoffer` decimal(64,12)[0m
+  [1m[35m (198.1ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `fbafee` `fbafee` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (181.4ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `storagefee` `storagefee` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (157.0ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `variableclosingfee` `variableclosingfee` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (181.3ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `commissiionfee` `commissiionfee` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (265.2ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `inboundshipping` `inboundshipping` decimal(64,12)[0m
+  [1m[35m (181.5ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbaoffer` `lowestfbaoffer` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (165.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbmoffer` `lowestfbmoffer` decimal(64,12) DEFAULT '0'[0m
+  [1m[35m (164.8ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `weight` `weight` decimal(64,12)[0m
+  [1m[35m (164.9ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `length` `length` decimal(64,12)[0m
+  [1m[35m (214.8ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `width` `width` decimal(64,12)[0m
+  [1m[35m (208.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `height` `height` decimal(64,12)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180624203353')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to UpdatePrecisionOfDecimals (20180624205155)
+  [1m[35m (196.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `buyboxprice` `buyboxprice` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (172.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `referenceoffer` `referenceoffer` decimal(64,2)[0m
+  [1m[35m (164.4ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `fbafee` `fbafee` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (199.0ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `storagefee` `storagefee` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (189.6ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `variableclosingfee` `variableclosingfee` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (222.8ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `commissiionfee` `commissiionfee` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (155.8ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `inboundshipping` `inboundshipping` decimal(64,2)[0m
+  [1m[35m (164.5ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbaoffer` `lowestfbaoffer` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (165.5ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `lowestfbmoffer` `lowestfbmoffer` decimal(64,2) DEFAULT '0.000000000000'[0m
+  [1m[35m (271.9ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `weight` `weight` decimal(64,2)[0m
+  [1m[35m (156.1ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `length` `length` decimal(64,2)[0m
+  [1m[35m (181.0ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `width` `width` decimal(64,2)[0m
+  [1m[35m (697.9ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `height` `height` decimal(64,2)[0m
+  [1m[35m (166.0ms)[0m  [1m[35mALTER TABLE `vendoritems` CHANGE `cost` `cost` decimal(64,2) DEFAULT '0'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180624205155')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to UpdatePrecisionOfDecimals1 (20180624210353)
+  [1m[35m (186.1ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `packagewidth` `packagewidth` decimal(64,2)[0m
+  [1m[35m (172.9ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `packageheight` `packageheight` decimal(64,2)[0m
+  [1m[35m (223.5ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `packagelength` `packagelength` decimal(64,2)[0m
+  [1m[35m (257.8ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `packageweight` `packageweight` decimal(64,2)[0m
+  [1m[35m (197.7ms)[0m  [1m[35mALTER TABLE `vendorasins` CHANGE `totalfbafee` `totalfbafee` decimal(64,2) DEFAULT '0'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180624210353')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-07-02 15:50:32', '2018-07-02 15:50:32')[0m
+  [1m[35m (42.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8034761521569787830')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `brands`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'brands'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `companies`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'companies'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `product_groups`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'product_groups'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `product_types`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'product_types'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `pull_inventories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'pull_inventories'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `raked_categories`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'raked_categories'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `roles`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'roles'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `skynet_id_types`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'skynet_id_types'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `skynet_statuses`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'skynet_statuses'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `skynets`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'skynets'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `subscriptions`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'subscriptions'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `vendor_categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'vendor_categories'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `vendorasins`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'vendorasins'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `vendoritems`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'vendoritems'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `vendors`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'vendors'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `roles` (`name`) VALUES ('Manager')[0m
+  [1m[35m (63.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `roles` (`name`) VALUES ('Buyer')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVendorCategory Exists (59.7ms)[0m  [1m[34mSELECT  1 AS one FROM `vendor_categories` WHERE `vendor_categories`.`name` = BINARY 'default' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `vendor_categories` (`name`) VALUES ('default')[0m
+  [1m[35m (40.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVendorCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `vendor_categories` WHERE `vendor_categories`.`name` = BINARY 'Baby' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `vendor_categories` (`name`) VALUES ('Baby')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVendorCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `vendor_categories` WHERE `vendor_categories`.`name` = BINARY 'Beauty' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `vendor_categories` (`name`) VALUES ('Beauty')[0m
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVendorCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `vendor_categories` WHERE `vendor_categories`.`name` = BINARY 'Clothing' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `vendor_categories` (`name`) VALUES ('Clothing')[0m
+  [1m[35m (63.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVendorCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `vendor_categories` WHERE `vendor_categories`.`name` = BINARY 'Food' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `vendor_categories` (`name`) VALUES ('Food')[0m
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_id_types` (`id`, `name`) VALUES (0, 'ASIN')[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_id_types` (`id`, `name`) VALUES (1, 'UPC')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_id_types` (`id`, `name`) VALUES (2, 'ISBN')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_id_types` (`id`, `name`) VALUES (3, 'EAN')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (0, 'InQueue')[0m
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (1, 'Processing')[0m
+  [1m[35m (48.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (2, 'Nothing')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (3, 'Completed')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (4, 'Failed')[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (5, 'Cancelled')[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `skynet_statuses` (`id`, `name`) VALUES (6, 'AskCancel')[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/document" for ::1 at 2018-07-02 11:51:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/document"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [116 times] (115.0ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.2ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (58.5ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (295.8ms)
+Started GET "/" for ::1 at 2018-07-02 11:51:16 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/home
+  Rendered home/index.html.erb within layouts/home (411.2ms)
+  Rendered layouts/partials/_hometopbar.erb (19.8ms)
+  Rendered layouts/partials/_homefooter.html.erb (0.6ms)
+Completed 200 OK in 12492ms (Views: 12428.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome/css/font-awesome.min.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/simple-line-icons/css/simple-line-icons.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/animate.css/animate.min.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/base.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/home.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/whirl/dist/whirl.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/wraith/app.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/vendor.assets.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/application.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/fonts.self.css?body=1" for ::1 at 2018-07-02 11:51:29 -0400
+Started GET "/assets/modernizr/modernizr.custom.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/bootstrap/dist/js/bootstrap.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/jquery/dist/jquery.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/jquery.easing/js/jquery.easing.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/jQuery-Storage-API/jquery.storageapi.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/animo.js/animo.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/slimScroll/jquery.slimscroll.min.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/screenfull/dist/screenfull.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/jquery-localize-i18n/dist/jquery.localize.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/home.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/base.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/app.init.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/custom/custom.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/bootstrap-start.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/calendar.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/chart-easypie.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/chart-knob.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/chartist.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/classyloader.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/chart.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/clear-storage.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/color-picker.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/constants.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/flatdoc.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/gmap.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/load-css.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/imagecrop.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/localize.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/maps-vector.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/fullscreen.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/morris.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/navbar-search.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/notify.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/now.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/panel-tools.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/select2.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/porlets.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/rickshaw.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/play-animation.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/sidebar.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/skycons.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/slimscroll.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/sparkline.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/sweetalert.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/table-checkall.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/tour.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/trigger-resize.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/utils.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/wraith/modules/toggle-state.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/javascripts/defaults.js" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/back/features.png" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/back/dashboard.png" for ::1 at 2018-07-02 11:51:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/assets/back/logo.png" for ::1 at 2018-07-02 11:51:30 -0400
+Started GET "/assets/application.self.js?body=1" for ::1 at 2018-07-02 11:51:30 -0400
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [116 times] (62.9ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.8ms)
+Started GET "/assets/back/footer.png" for ::1 at 2018-07-02 11:51:31 -0400
+Started GET "/assets/back/signin_banner.jpg" for ::1 at 2018-07-02 11:51:31 -0400
+Started GET "/api/i18n/site-en.json" for ::1 at 2018-07-02 11:51:31 -0400
+  
+SyntaxError (/home/universe/work/fba_support/app/controllers/api_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+    render: text: "Do you want to get new
+           ^):
+  
+app/controllers/api_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.2ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.6ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (36.0ms)
+Started GET "/api/postbanner" for ::1 at 2018-07-02 11:51:46 -0400
+  
+SyntaxError (/home/universe/work/fba_support/app/controllers/api_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+    render: text: "Do you want to get new
+           ^):
+  
+app/controllers/api_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.9ms)
+Started GET "/api/postbanner" for ::1 at 2018-07-02 11:52:10 -0400
+Processing by ApiController#postbanner as HTML
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from postbanner at /home/universe/work/fba_support/app/controllers/api_controller.rb:33)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/postbanner" for ::1 at 2018-07-02 11:53:07 -0400
+Processing by ApiController#postbanner as HTML
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from postbanner at /home/universe/work/fba_support/app/controllers/api_controller.rb:33)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-02 11:53:16 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/home
+  Rendered home/index.html.erb within layouts/home (12.4ms)
+  Rendered layouts/partials/_hometopbar.erb (4.2ms)
+  Rendered layouts/partials/_homefooter.html.erb (0.5ms)
+Completed 200 OK in 483ms (Views: 478.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome/css/font-awesome.min.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/animate.css/animate.min.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/simple-line-icons/css/simple-line-icons.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/app.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/base.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/home.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/vendor.assets.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/fonts.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/whirl/dist/whirl.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/application.self.css?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/modernizr/modernizr.custom.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/jquery/dist/jquery.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/jQuery-Storage-API/jquery.storageapi.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/jquery.easing/js/jquery.easing.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/bootstrap/dist/js/bootstrap.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/animo.js/animo.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/slimScroll/jquery.slimscroll.min.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/jquery-localize-i18n/dist/jquery.localize.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/screenfull/dist/screenfull.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/base.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/home.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/app.init.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/bootstrap-start.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/chart-easypie.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/chart-knob.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/calendar.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/custom/custom.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/chart.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/chartist.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/classyloader.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/constants.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/color-picker.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/flatdoc.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/clear-storage.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/fullscreen.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/gmap.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/imagecrop.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/localize.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/load-css.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/maps-vector.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/morris.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/navbar-search.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/notify.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/now.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/panel-tools.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/play-animation.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/porlets.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/rickshaw.self.js?body=1" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/back/signin_banner.jpg" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/back/logo.png" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/back/features.png" for ::1 at 2018-07-02 11:53:17 -0400
+Started GET "/assets/wraith/modules/select2.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/sidebar.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/slimscroll.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/skycons.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/sparkline.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/sweetalert.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/toggle-state.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/trigger-resize.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/tour.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/table-checkall.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/wraith/modules/utils.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/application.self.js?body=1" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/javascripts/defaults.js" for ::1 at 2018-07-02 11:53:18 -0400
+Started GET "/assets/back/dashboard.png" for ::1 at 2018-07-02 11:53:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/assets/back/footer.png" for ::1 at 2018-07-02 11:53:18 -0400
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [116 times] (66.2ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.1ms)
+Started GET "/api/i18n/site-en.json" for ::1 at 2018-07-02 11:53:18 -0400
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendering app/assets/i18n/site-en.json
+  Rendered app/assets/i18n/site-en.json (0.6ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/i18n/site-en.json" for ::1 at 2018-07-02 11:53:18 -0400
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendering app/assets/i18n/site-en.json
+  Rendered app/assets/i18n/site-en.json (0.7ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/simple-line-icons/css/simple-line-icons.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/whirl/dist/whirl.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/animate.css/animate.min.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/base.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/fontawesome/css/font-awesome.min.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/home.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/fonts.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/wraith/app.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/vendor.assets.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/assets/application.self.css?body=1" for ::1 at 2018-07-02 11:53:30 -0400
+Started GET "/api/datatable" for ::1 at 2018-07-02 13:20:35 -0400
+Processing by ApiController#datatable as HTML
+  Rendering app/assets/api/datatable.json
+  Rendered app/assets/api/datatable.json (1461.3ms)
+Completed 200 OK in 3002ms (Views: 2782.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/postbanner" for ::1 at 2018-07-02 13:40:06 -0400
+Processing by ApiController#postbanner as HTML
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template app/assets/api/postbanner with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/universe/work/fba_support/app/views"
+  * "/home/universe/.rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views"
+  * "/home/universe/.rvm/gems/ruby-2.4.1/gems/kaminari-core-1.1.1/app/views"
+  * "/home/universe/work/fba_support"
+  * "/"
+):
+  
+app/controllers/api_controller.rb:33:in `postbanner'
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (265.6ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (60.3ms)
+  Rendering /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (208.5ms)
+  Rendered /home/universe/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (763.5ms)
+Started GET "/api/postbanner" for ::1 at 2018-07-02 13:41:50 -0400
+Processing by ApiController#postbanner as HTML
+  Rendering app/assets/api/postbanner.json
+  Rendered app/assets/api/postbanner.json (5.6ms)
+Completed 200 OK in 168ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/postbanner" for ::1 at 2018-07-02 13:43:07 -0400
+Processing by ApiController#postbanner as HTML
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from postbanner at /home/universe/work/fba_support/app/controllers/api_controller.rb:33)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 95ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/postbanner" for ::1 at 2018-07-02 13:43:25 -0400
+Processing by ApiController#postbanner as HTML
+  Rendering app/assets/api/postbanner.json
+  Rendered app/assets/api/postbanner.json (25.1ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
